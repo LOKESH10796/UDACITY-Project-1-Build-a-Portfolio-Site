@@ -1,0 +1,36 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Validate HTML
+      uses: html-validate/html-validate@v1
+      with:
+        config: '{"extends": ["html-validate:recommended"]}'
+    
+    - name: Check accessibility
+      run: npx pa11y-ci --sitemap https://lokesh10796.github.io --sitemap-find https://lokesh10796.github.io --sitemap-replace https://lokesh10796.github.io
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
