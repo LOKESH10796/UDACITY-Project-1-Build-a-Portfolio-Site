@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+/package-lock.json
+yarn.lock
+.pnp/
+.pnp.js
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build outputs
+dist/
+build/
+out/
+*.zip
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment variables
+.env
+.env.*
+! .env.example
+
+# Misc
+.cache
