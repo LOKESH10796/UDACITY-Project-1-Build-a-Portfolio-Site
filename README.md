@@ -1,97 +1,34 @@
-# Udacity Project 1 - Portfolio Site
+# 👨‍💻 Portfolio V1 (Legacy)
 
-<div align="center">
+[![React](https://img.shields.io/badge/React-19.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![Udacity](https://img.shields.io/badge/Udacity-Nanodegree-02B3E2?logo=udacity)](https://www.udacity.com)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+> **Note**: This is Version 1 of my personal portfolio. It was originally built from scratch as part of the Udacity Front-End Web Developer Nanodegree, but has since been **fully modernized** into a React 19 SPA.
 
-</div>
+## ✨ V2 Architecture Upgrades
+The original static HTML5/CSS3 monolith was refactored into a high-performance modern web application:
+- **Core Engine**: Migrated to React 19 with strict TypeScript typing.
+- **Build System**: Upgraded to Vite 6 for lightning-fast HMR and optimized production builds.
+- **Styling**: Ripped out legacy CSS files in favor of utility-first Tailwind CSS 4.
+- **Icons**: Integrated `lucide-react` for scalable SVG icon rendering.
+- **PWA**: Added `vite-plugin-pwa` for progressive web app caching and offline support.
 
-Personal portfolio website built from scratch as part of Udacity's Front-End Web Developer Nanodegree. This project demonstrates core web development skills including semantic HTML5, responsive CSS3, and modern web standards.
+## 🚀 Local Development
 
-## Features
+```bash
+# 1. Install dependencies
+npm install
 
-- **HTML5 Semantic Markup**: Proper use of header, nav, main, article, section, footer
-- **CSS3 Styling**: Flexbox, Grid, animations, and custom properties
-- **Responsive Design**: Mobile-first approach with media queries
-- **Project Showcase**: Display of 4 sample projects with descriptions
-- **Cross-Browser Compatible**: Works across all modern browsers
+# 2. Start the Vite Dev Server
+npm run dev
 
-## Badges
-
-[![GitHub Repo Stars](https://img.shields.io/github/stars/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site?style=for-the-badge)](https://github.com/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site)
-[![GitHub Forks](https://img.shields.io/github/forks/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site?style=for-the-badge)](https://github.com/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site)
-[![GitHub Issues](https://img.shields.io/github/issues/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site?style=for-the-badge)](https://github.com/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site)
-[![GitHub License](https://img.shields.io/github/license/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site?style=for-the-badge)](https://github.com/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site)
-
-## Tech Stack
-
-| Category | Technology |
-|----------|------------|
-| Markup | HTML5 (Semantic Elements) |
-| Styling | CSS3 (Flexbox, Grid, Media Queries) |
-| Deployment | GitHub Pages |
-| Course | Udacity Front-End Web Developer Nanodegree |
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd UDACITY-Project-1-Build-a-Portfolio-Site
-   ```
-
-3. Open `index.html` in a web browser (no build step required):
-   ```bash
-   # Using Python's built-in HTTP server
-   python -m http.server 8000
-   # Open http://localhost:8000
-   ```
-
-## Usage
-
-This is a static portfolio site. Customize by editing:
-
-- **index.html**: Update personal information, project details, and content
-- **styles/styles.css**: Modify colors, fonts, layout, and responsive breakpoints
-
-## Project Structure
-
-```
-UDACITY-Project-1-Build-a-Portfolio-Site/
-├── index.html            # Main portfolio page
-├── styles/
-│   └── styles.css        # Main stylesheet
-├── .github/
-│   └── workflows/
-│       └── deploy.yml    # GitHub Actions deploy workflow
-├── README.md             # This file
-├── LICENSE               # MIT License
-└── CONTRIBUTING.md       # Contributing guidelines
+# 3. Build for Production
+npm run build
 ```
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
-
-## Security
-
-See [SECURITY.md](SECURITY.md) for the security policy and vulnerability reporting.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- **Name**: Lokesh Gounder
-- **GitHub**: [LOKESH10796](https://github.com/LOKESH10796)
-- **LinkedIn**: [lokeshgounder](https://linkedin.com/in/lokeshgounder)
-
-Project Link: [https://github.com/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site](https://github.com/LOKESH10796/UDACITY-Project-1-Build-a-Portfolio-Site)
+## 👨‍💻 Developed By
+**Lokesh Gounder**  
+📧 [lokeshgounder@gmail.com](mailto:lokeshgounder@gmail.com)  
+🔗 [GitHub Profile](https://github.com/LOKESH10796)
